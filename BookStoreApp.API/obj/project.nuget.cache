@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "beWsJN6u6yvQQpV4873OFYnx8o6rHEqUFjZI9s+jF5Ndcf46ik/TcVe7dov2e8rEYC5sOHZywm0VNgCs1hUorw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sezer.sinanoglu\\source\\repos\\BookStoreApp\\BookStoreApp.API\\BookStoreApp.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
