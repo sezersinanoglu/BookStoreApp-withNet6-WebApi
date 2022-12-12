@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bLAvh9D/1r/jE8zQfD5gZULlCYSTwPJ+t0Ct7V96izo4l4LTc0lvl7V1rJMdQF9ZI5O72p6ygUP6FUUV50DFAA==",
+  "dgSpecHash": "BY2BBd5yyjeYUT/jyd/V+GRxIS9V66Ms9/IDH9OcuPD5G9CSygEB8SViHf9QdS/i5eNjebYvHJoBgCXhQHodcQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sezer.sinanoglu\\source\\repos\\BookStoreApp\\BookStoreApp.API\\BookStoreApp.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
@@ -27,7 +29,7 @@
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.codeanalysis.visualbasic.workspaces\\4.0.0\\microsoft.codeanalysis.visualbasic.workspaces.4.0.0.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.0.0\\microsoft.codeanalysis.workspaces.common.4.0.0.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.0.0\\microsoft.codeanalysis.workspaces.msbuild.4.0.0.nupkg.sha512",
-    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\sezer.sinanoglu\\.nuget\\packages\\microsoft.diasymreader\\1.3.0\\microsoft.diasymreader.1.3.0.nupkg.sha512",
