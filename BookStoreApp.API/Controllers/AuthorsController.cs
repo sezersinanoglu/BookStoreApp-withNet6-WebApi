@@ -64,7 +64,8 @@ namespace BookStoreApp.API.Controllers
                 return NotFound();
             }
 
-            _context.Entry(authorDto).State = EntityState.Modified;
+            _mapper.Map(authorDto, author);
+            _context.Entry(author).State = EntityState.Modified;
 
             try
             {
