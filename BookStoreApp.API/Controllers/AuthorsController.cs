@@ -38,12 +38,12 @@ namespace BookStoreApp.API.Controllers
         public async Task<ActionResult<AuthorDto>> GetAuthor(int id)
         {
             var author = await _context.Authors.FindAsync(id);
-            var authorDto = _mapper.Map<AuthorDto>(author);
-
             if (author == null)
             {
                 return NotFound();
             }
+
+            var authorDto = _mapper.Map<AuthorDto>(author);
 
             return authorDto;
         }
