@@ -5,19 +5,26 @@ using BookStoreApp.API.Models;
 
 namespace BookStoreApp.API.Configuration
 {
-    public class MapperConfig:Profile
+    public class MapperConfig : Profile
     {
-        public MapperConfig() 
-        { 
+        public MapperConfig()
+        {
             //AuthorDto Map Config Settings
             CreateMap<AuthorCreateDto, Author>().ReverseMap();
             CreateMap<AuthorUpdateDto, Author>().ReverseMap();
             CreateMap<AuthorDto, Author>().ReverseMap();
             CreateMap<AuthorReadOnlyDto, Author>().ReverseMap();
 
+
             //BookDto Map Config Settings
-            CreateMap<BookDto, Book>().ReverseMap();
-            CreateMap<BookReadOnlyDto, Book>().ReverseMap();
+            CreateMap<Book, BookDto>()
+                .ForMember(q => q.AuthorName, d => d.MapFrom(map => $"{map.Author.FirstName} {map.Author.LastName}"))
+                .ReverseMap();
+
+            CreateMap<Book, BookReadOnlyDto>()
+             .ForMember(q => q.AuthorName, d => d.MapFrom(map => $"{map.Author.FirstName} {map.Author.LastName}"))
+             .ReverseMap();
+
             CreateMap<BookCreateDto, Book>().ReverseMap();
             CreateMap<BookUpdateDto, Book>().ReverseMap();
         }
