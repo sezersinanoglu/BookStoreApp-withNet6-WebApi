@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BookStoreApp.API.Models
 {
-    public partial class BookStoreDbContext : DbContext
+    public partial class BookStoreDbContext : IdentityDbContext<ApiUser>
     {
         public BookStoreDbContext()
         {
@@ -19,8 +20,8 @@ namespace BookStoreApp.API.Models
 
         public virtual DbSet<Author> Authors { get; set; } = null!;
         public virtual DbSet<Book> Books { get; set; } = null!;
-        public virtual DbSet<ApiUser> ApiUsers { get; set; } = null!;
-        public virtual DbSet<ApiRole> ApiRoles { get; set; } = null!;
+        //public virtual DbSet<ApiUser> ApiUsers { get; set; } = null!;
+        //public virtual DbSet<ApiRole> ApiRoles { get; set; } = null!;
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -56,7 +57,20 @@ namespace BookStoreApp.API.Models
                     .HasConstraintName("FK_Books_Authors");
             });
 
-            //modelBuilder.Entity<ApiUser>().HasNoKey();
+            modelBuilder.Entity<IdentityRole>().HasData(
+                 new IdentityRole
+                 {
+                     Name = "User",
+                     NormalizedName = "USER",
+                     Id = "8343074e-8623-4e1a-b0c1-84fb8678c8f3"
+                 },
+                 new IdentityRole
+                 {
+                     Name = "Administrator",
+                     NormalizedName = "ADMINISTRATOR",
+                     Id = "c7ac6cfe-1f10-4baf-b604-cde350db9554"
+                 }
+             );
 
             var hasher = new PasswordHasher<ApiUser>();
 
@@ -85,13 +99,13 @@ namespace BookStoreApp.API.Models
                 }
             );
 
-            modelBuilder.Entity<ApiRole>().HasData(
-                new ApiRole
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
                 {
                     RoleId = "8343074e-8623-4e1a-b0c1-84fb8678c8f3",
                     UserId = "8e448afa-f008-446e-a52f-13c449803c2e",
                 },
-                new ApiRole
+                new IdentityUserRole<string>
                 {
                     RoleId = "c7ac6cfe-1f10-4baf-b604-cde350db9554",
                     UserId = "30a24107-d279-4e37-96fd-01af5b38cb27"

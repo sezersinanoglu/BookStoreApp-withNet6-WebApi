@@ -13,7 +13,7 @@ var conString = builder.Configuration.GetConnectionString("BookStoreAppDbConnect
 builder.Services.AddDbContext<BookStoreDbContext>(opt => opt.UseSqlServer(conString));
 
 builder.Services.AddIdentityCore<ApiUser>()
-    .AddRoles<ApiRole>()
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<BookStoreDbContext>();
 
 builder.Services.AddAutoMapper(typeof(MapperConfig));
